@@ -104,6 +104,29 @@
                 </div>
             </div>
         </div>
+
+         <!-- Informazio Panela eta Botoia -->
+        <div class="absolute bottom-4 right-4 z-20">
+            <div id="creditsPanel" class="hidden absolute bottom-14 sm:bottom-0 right-4 bg-white/95 backdrop-blur-sm shadow-xl rounded-lg w-[calc(100vw-2.5rem)] sm:w-80 text-sm text-gray-800 flex transition-transform duration-300 ease-in-out">
+                <div class="p-3 flex-grow space-y-2">
+                    <p><span class="font-bold">Baserriaren Simuladore Termikoa</span></p>
+                    <p><a href="https://berezuma.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 hover:underline">Beñat Erezuma</a>-k garatua, zure argibideetan oinarrituta.</p>
+                    <div class="border-t border-gray-300 !my-2"></div>
+                    <p>Jatorrizko lana: <a href="https://www.ueu.eus/apunteak/ingeniaritza-eta-teknologia-1/arkitektura/10-12-baserrien-analisi-termikoa-ugaitz-gaztelu/at_download/file" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ugaitz Gaztelu</a> arkitektoarena.</p>
+                    <p>Teknologia: <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Three.js</a></p>
+                    <p>Lizentzia: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">CC BY-SA 4.0</a></p>
+                </div>
+                <button id="closeCreditsPanel" class="flex-shrink-0 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-r-lg w-8 flex items-center justify-center" aria-label="Itxi informazioa">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <button id="creditsButton" class="bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg border border-gray-200" aria-label="Informazioa">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </button>
+        </div>
+
     </div>
 
     <div id="quiz-view" class="hidden">
@@ -149,6 +172,9 @@
         const quizView = document.getElementById('quiz-view');
         const btnQuiz = document.getElementById('btn-quiz');
         const btnBackToSim = document.getElementById('back-to-sim-btn');
+        const creditsButton = document.getElementById('creditsButton');
+        const creditsPanel = document.getElementById('creditsPanel');
+        const closeCreditsPanel = document.getElementById('closeCreditsPanel');
 
         btnQuiz.addEventListener('click', () => {
             simulatorView.classList.add('hidden');
@@ -158,6 +184,13 @@
         btnBackToSim.addEventListener('click', () => {
             quizView.classList.add('hidden');
             simulatorView.classList.remove('hidden');
+        });
+
+        creditsButton.addEventListener('click', () => {
+            creditsPanel.classList.toggle('hidden');
+        });
+        closeCreditsPanel.addEventListener('click', () => {
+            creditsPanel.classList.add('hidden');
         });
 
 
@@ -876,4 +909,6 @@
     </script>
 </body>
 </html>
+
+
 

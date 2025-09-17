@@ -30,6 +30,12 @@ Erabilera
 - Aplikazioa exekutatzeko, index.html fitxategia web nabigatzaile batetik irekitzea baino ez da beharrezkoa.
 - 3D Ereduan Nabigatu: Erabili sagua (edo hatza mugikorrean) baserria biratzeko, arrastatzeko eta zooma doitzeko.
 - Fenomenoak Aktibatu: Erabili beheko kontrol-panela simulazio bakoitza aktibatzeko. Egin klik botoi bakoitzean dagokion efektua ikusteko eta goiko informazio-panelean azalpena irakurtzeko.
-- Garapena eta LizentziaGaratzailea: Gemini AA sortzailea.
-- Jatorrizko Ikerketa eta Dokumentazioa: Ugaitz Gaztelu (Arkitektoa).
-- Lizentzia: Proiektu hau Creative Commons Aitortu-PartekatuBerdin 4.0 lizentziapean argitaratuta dago.
+
+Garapena eta Lizentzia
+
+- Garatzailea: Beñat Erezuma Arisketa.
+- Jatorrizko ikerketa eta dokumentazioa: Ugaitz Gaztelu Onaindia.
+
+Lizentzia:
+
+- Proiektu hau Creative Commons Aitortu-PartekatuBerdin 4.0 lizentziapean argitaratuta dago.
